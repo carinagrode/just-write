@@ -1,9 +1,12 @@
-const textInput = document.getElementById('input-text');
-const textDisplay = document.getElementById('displayed-text');
+const textArea = document.getElementById('textArea');
 
-textInput.addEventListener('input', displayWrittenText);
+textArea.focus();
 
-function displayWrittenText() {
-    const writtenText = textInput.value;
-    textDisplay.textContent = writtenText;
+function createCursor() {
+    const cursor = document.createElement('span');
+    cursor.className = 'cursor';
+    cursor.textContent = '|';
+    return cursor;
 }
+
+textArea.appendChild(createCursor());
