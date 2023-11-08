@@ -1,10 +1,3 @@
-// Next steps:
-// - Delete browser default input field: blue border
-// - Add cursor
-// - Make lines fade out
-
-
-
 const textArea = document.getElementById('textArea');
 
 textArea.focus();
