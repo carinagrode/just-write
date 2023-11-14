@@ -82,5 +82,9 @@ ul {
     outline: none;
 }
 
+#textArea::first-line {
+    color: green;
+}
+
 
 
